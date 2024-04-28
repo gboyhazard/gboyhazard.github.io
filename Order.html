@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - VeesShowroomVintage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/Screenshot 2024-04-17 205713.png'); 
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px; 
+        }
+        form {
+            margin-top: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333; 
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Order Form</h1>
+        <form action="submit_order.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="item">Select Item:</label>
+            <select id="item" name="item" required>
+                <option value="">Select an item...</option>
+                <option value="Dress">Dress</option>
+                <option value="Purse">Purse</option>
+                <option value="Second Dress">Second Dress</option>
+            </select>
+            <label for="price">Price (N$):</label>
+            <input type="text" id="price" name="price" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+        <p><strong>Return to the home page.</strong></p>
+    </p><p><a href="home.html">home page</a></p>
+    <p><strong>View all the wonderfull items we have in stock by clicking the link below</strong></p>
+    <p><a href="ImageGallery.html">Image Gallery</a>
+        <p><strong>View our calender to see our operational dates and catch on any specials.</strong></p>
+    <p><a href="TradingCalender.html">Trading Calendar</a></p>
+    </div>
+</body>
+</html>
